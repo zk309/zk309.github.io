@@ -1,0 +1,102 @@
+/* 秒杀模块样式 */
+.sk {
+    position: absolute;
+    left: 187px;
+    top: 40px;
+    padding-left: 15px;
+    border-left: 1px solid #b1191a;
+}
+
+/* nav 模块样式 */
+.nav {
+    overflow: hidden;
+}
+.nav .sk_list li {
+    float: left;
+}
+.nav .sk_list li a {
+    display: block;
+    padding: 0 30px;
+    line-height: 47px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.nav .sk_con li {
+    float: left;
+}
+.nav .sk_con li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 49px;
+    font-size: 14px;
+}
+.nav .sk_con li:last-child a::after {
+    content: "\e914";
+    font-family: "icomoon";
+}
+/* 列表页主题内容样式 */
+.sk_container .sk_hd {
+    margin-bottom: 25px;
+    height: 120px;
+    width: 100%;
+}
+.sk_container .sk_bd ul li{
+    float: left;
+    margin-right: 15px;
+    width: 287px;
+    height: 464px;
+    border: 2px solid transparent;
+    /* background-color: pink; */
+}
+.sk_container .sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.sk_container .sk_bd ul li .text {
+    padding: 0 15px;
+}
+.sk_container .sk_bd ul li .text p {
+    margin-bottom: 5px;
+}
+.sk_container .sk_bd ul li .text span:nth-of-type(1) {
+    font-size: 22px;
+    color: #e60012;
+}
+.sk_container .sk_bd ul li .text span:nth-of-type(2) {
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+.sk_container .sk_bd ul li .text .progress {
+    display: inline-block;
+    padding: 2px;
+    width: 134px;
+    height: 15px;
+    border: 1px solid #e60012;
+    border-radius: 8px;
+}
+.sk_container .sk_bd ul li .text .progress .bar {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-color: #e60012;
+    border-radius: 8px;
+}
+.sk_container .sk_bd ul li .text span:nth-of-type(4) i{
+    color: #e60012;
+    font-size: 14px;
+}
+.sk_container .sk_bd ul li>a {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #b1191a;
+}
+.sk_container .sk_bd ul li:hover {
+    border: 2px solid #e60012;
+}
