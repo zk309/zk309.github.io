@@ -6,12 +6,64 @@
     margin-left: 220px;
     margin-top: 13px;
 }
+/* 轮播图样式 制作 */
 .main .focus {
+    position: relative;
     float: left;
-    width: 725px;
+    width: 721px;
     height: 456px;
     /* background-color: skyblue; */
+    overflow: hidden;
 }
+.main .focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 650%;
+}
+.main .focus ul li {
+    float: left;
+}
+/* 轮播图的左右箭头 */
+.main .focus .arrow-l ,
+.main .focus .arrow-r {
+    font-family: 'icomoon';
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+.main .focus .arrow-r {
+    right: 3px;
+}
+/* 轮播图的小圆圈 */
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+.circle li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.current {
+    background-color: #fff;
+}
+
+
 .main .newsflash {
     float: right;
     width: 251px;
@@ -260,6 +312,13 @@
 .floor>.w {
     margin-top: 28px;
 }
+/* 给图片添加特效 */
+.floor img:hover {
+    margin-left: 8px;
+}
+.floor img {
+    transition: all .2s;
+}
 .floor .box-hd {
     height: 30px;
     border-bottom: 2px solid #c81623;
@@ -348,6 +407,13 @@
     margin-top: 30px;
     height: 433px;
     /* background-color: pink; */
+}
+/* 给图片添加特效 */
+.amusing img:hover {
+    margin-left: 8px;
+}
+.amusing img {
+    transition: all .2s;
 }
 .amusing .box_hd {
     height: 30px;
