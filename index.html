@@ -4,8 +4,8 @@
  * @Author: ZhangKe
  * @Date: 2022-02-13 19:50:24
  * @LastEditors: ZhangKe
- * @LastEditTime: 2022-03-19 14:23:01
- * @FilePath: \shoping\index.html
+ * @LastEditTime: 2022-03-27 00:28:14
+ * @FilePath: \11-品优购案例\shoping\index.html
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -29,9 +29,12 @@
     <link rel="stylesheet" href="./css/common.css">
     <!-- 引入首页样式文件。 -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- 引入首页的js效果。 -->
+    <!-- 引入首页的轮播图效果。(原生) -->
     <script src="./js/animate.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/lunbotu.js"></script>
+    <!-- 引入电梯导航效果. (jQuery)-->
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/navigation.js"></script>
 </head>
 
 <body>
@@ -466,7 +469,7 @@
         </div>
 
         <!-- 商标导航模块 start -->
-        <div class="w brand">
+        <div class="e brand">
             <ul>
                 <li><a href=""><img src="./upload/cz-icon-01.png" alt=""></a></li>
                 <li><a href=""><img src="./upload/cz-icon-02.png" alt=""></a></li>
@@ -550,7 +553,7 @@
         </div>
 
         <!-- 商标导航模块 start -->
-        <div class="w brand">
+        <div class="e brand">
             <ul>
                 <li><a href=""><img src="./upload/cz-icon-01.png" alt=""></a></li>
                 <li><a href=""><img src="./upload/cz-icon-02.png" alt=""></a></li>
@@ -634,7 +637,7 @@
         </div>
 
         <!-- 商标导航模块 start -->
-        <div class="w brand">
+        <div class="e brand">
             <ul>
                 <li><a href=""><img src="./upload/cz-icon-01.png" alt=""></a></li>
                 <li><a href=""><img src="./upload/cz-icon-02.png" alt=""></a></li>
@@ -649,6 +652,83 @@
             </ul>
         </div>
         <!-- 商标导航模块 end -->
+
+        <!-- 4楼 精品家具-->
+        <div class="w furniture">
+            <div class="box-hd">
+                <h3>精品家具</h3>
+                <div class="tab_list fr">
+                    <ul>
+                        <li><a href="">热门</a>|</li>
+                        <li><a href="">大家电</a>|</li>
+                        <li><a href="">生活电器</a>|</li>
+                        <li><a href="">厨房电器</a>|</li>
+                        <li><a href="">个护健康</a>|</li>
+                        <li><a href="">应季电器</a>|</li>
+                        <li><a href="">空气/净水</a>|</li>
+                        <li><a href="">新奇特</a>|</li>
+                        <li><a href="">高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="clo_211">
+                            <ul>
+                                <li><a href="#">手机通讯</a></li>
+                                <li><a href="#">以旧换新</a></li>
+                                <li><a href="#">双卡双待</a></li>
+                                <li><a href="#">自营配件</a></li>
+                                <li><a href="#">金属机身</a></li>
+                                <li><a href="#">高清屏</a></li>
+                            </ul>
+                            <a href="#">
+                                <img src="../shoping/upload/floor_01_01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="clo_330">
+                            <div>
+                                <a href="#">
+                                    <img src="./upload/floor_01_02.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clo_220 clo_220_1">
+                            <a href="#">
+                                <img src="./upload/floor_01_04.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./upload/floor_01_06.png" alt="">
+                            </a>
+                        </div>
+                        <div class="clo_220 clo_220_2">
+                            <a href="#">
+                                <img src="./upload/floor_01_03.png" alt="">
+                            </a>
+                        </div>
+                        <div class="clo_219">
+                            <a href="#">
+                                <img src="./upload/floor_01_05.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./upload/floor_01_07.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 固定电梯导航 -->
+        <div class="fixedtool">
+            <ul>
+                <li class="current">家用电器</li>
+                <li class="">手机通讯</li>
+                <li class="">电脑办公</li>
+                <li class="">精品家具</li>
+            </ul>
+        </div>
     </article>
     <!-- 楼层区域模块制作 end -->
 

@@ -310,9 +310,41 @@
 }
 
 /* 楼层区域样式 */
-.floor>.w {
+.floor>.e {
+    width: 1200px;
+    margin: 0 auto;
     margin-top: 28px;
 }
+
+/* 楼层区域电梯导航样式 */
+.fixedtool {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 47%;
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.fixedtool li:last-child {
+    border-bottom: 0;
+}
+
 /* 给图片添加特效 */
 .floor img:hover {
     margin-left: 8px;
