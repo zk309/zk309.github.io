@@ -340,6 +340,8 @@
     width: 978px;
 }
 
+/* 导航栏切换 */
+/* 头部 */
 .detail_tab_list {
     height: 39px;
     border: 1px solid #ccc;
@@ -358,6 +360,14 @@
 .detail_tab_list .current {
     background-color: #c81623;
     color: #fff;
+}
+/* 主体 */
+.detail_tab_con div {
+    display: none;
+}
+
+.detail_tab_con div:first-child{
+    display: block;
 }
 
 .item_info {
