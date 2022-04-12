@@ -1,3 +1,12 @@
+/*
+ * @Descripttion: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @version: April 2021 (version 1.56)
+ * @Author: ZhangKe
+ * @Date: 2022-03-27 10:28:13
+ * @LastEditors: ZhangKe
+ * @LastEditTime: 2022-04-12 09:51:24
+ * @FilePath: \11-品优购案例\shoping\js\detail.js
+ */
 window.addEventListener('load', function() {
     var preview_img = document.querySelector('.preview_img');
     var mask = document.querySelector('.mask');
@@ -46,7 +55,17 @@ window.addEventListener('load', function() {
         var bigY = maskY * bigMax / maskMax;
         bigIMg.style.left = -bigX + 'px';
         bigIMg.style.top = -bigY + 'px';
+    });
 
+
+    // detail_tab_list 导航栏切换
+    $('.detail_tab_list').on('click', 'li', function(evt) {
+        // console.log($(this));
+        $(this).addClass("current").siblings("li").removeClass("current");
+
+        var index = $(this).index();
+        // console.log(index);
+        $(".detail_tab_con div").eq(index).show().siblings("div").hide();
     })
 
 })
